@@ -1,0 +1,28 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "MapNate", root_path, class: "navbar-brand" %>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to "笔记", notes_path %></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if logged_in? %>
+          <li><%= link_to "#{current_user.name}", '#' %></li>
+          <li><%= link_to "登出", logout_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "注册", signup_path %></li>
+          <li><%= link_to "登录", login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
