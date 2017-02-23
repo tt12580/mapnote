@@ -1,6 +1,33 @@
-<div class="col-md-6 col-md-offset-3">
-  <% if logged_in? %>
-  <div id="map">
+<div class="container">
+    <div class="col-lg-6">
+      <table class="table table-bordered">
+        <tr>
+          <th>#</th>
+          <th>主题</th>
+          <th>内容</th>
+          <th>编辑</th>
+        </tr>
+        <% @notes.each do |note| %>
+        <tr>
+          <td><%= note.id %></td>
+          <td><%= note.title %></td>
+          <td><%= note.body %></td>
+          <td>
+            <% if current_user == note.user %>
+              <%= link_to "edit", edit_note_path(note) %>
+              <%= link_to "delete", note, method: :delete, data: { confirm: "确定删除？" }  %>
+            <% end %>
+          </td>
+        </tr>
+        <% end %>
+      </table>
+    <div class="col-lg-6 col-lg-offset-6">
+      <div id="map">
+
+      </div>
+    </div>
   </div>
-  <% end %>
+  <div class="row">
+
+  </div>
 </div>
