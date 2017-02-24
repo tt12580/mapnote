@@ -1,8 +1,8 @@
 <%= simple_form_for(@note, class: "form-inline") do |f| %>
   <%= f.input :title, label: "主题", class: "form-control" %>
+  <%= f.input :note_type, label: "标签", class: "form-control" %>
   <%= f.input :body, label: "内容", as: :text, class: "form-control" %>
-  <%= f.input :lng, label: "纬度", class: "form-control" %>
-  <%= f.input :lat, label: "经度", class: "form-control" %>
+  <%= f.input :latlng, label: "经纬度", class: "form-control" %>
   <button type="button" name="确定", id="locate">确定</button>
   <button type="button" name="重置", id="reset">重置</button>
   <%= f.button "submit", class: "btn btn-primary btn-block" %>

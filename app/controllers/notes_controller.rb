@@ -1,9 +1,9 @@
 class NotesController < ApplicationController
-  before_action :require_logged_in, except: [:index, :show]
+  before_action :require_logged_in
   before_action :set_note, only: [:edit, :show, :update, :destroy]
 
   def index
-    @notes = Note.all
+    @notes = current_user.notes.by_type(params[:note_type])
   end
 
   def new
@@ -31,16 +31,33 @@ class NotesController < ApplicationController
     end
   end
 
+  def destroy
+    if @note.destroy
+      flash[:success] = "删除成功。"
+      redirect_to notes_url
+    end
+  end
+
   def show
+    if current_user.id == @note.user.id
+      render "show"
+    else
+      redirect_to notes_url
+    end
   end
 
   def edit
+    if current_user.id == @note.user.id
+      render "edit"
+    else
+      redirect_to notes_url
+    end
   end
 
   private
 
   def note_params
-    params.require(:note).permit(:title, :body)
+    params.require(:note).permit(:title, :body, :latlng, :note_type)
   end
 
   def set_note

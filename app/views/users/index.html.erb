@@ -1,0 +1,25 @@
+<% provide(:title, "用户列表") %>
+
+<div class="container">
+  <div class="col-lg-6 col-lg-offset-3">
+    <table class="table table-bordered">
+      <tr>
+        <th>#</th>
+        <th>用户名</th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td>
+            <% if current_user.id == user.id %>
+              <%= link_to user.name, notes_path %>
+            <% else %>
+              <%= user.name %>
+            <% end %>
+          </td>
+        </tr>
+        <% end %>
+    </table>
+
+  </div>
+</div>

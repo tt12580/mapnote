@@ -1,0 +1,244 @@
+/*header*/
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar-brand{
+    padding: 15px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+    a{
+      color: #777;
+    }
+}
+*{
+  margin: 0;
+}
+#logo{
+  float: left;
+  padding-top: 10px;
+}
+.navbar-link{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.navbar-right{
+  padding-right: 10px;
+}
+.part-1{
+  display: block;
+  background: #e0afaf;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: 960px;
+  height: 450px;
+  position: relative;
+}
+.part-1 .block-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 450px;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.part-1 .block-1 h1{
+  color: black;
+  font-size: 44px;
+  line-height: 56px;
+}
+.block-1-button{
+  border-radius: 25px;
+  display: inline-block;
+  border: 2px solid #fff;
+  line-height: 1;
+  font-size: 20px;
+  padding: 14px 40px 13px;
+  margin-right: 10px;
+  margin-top: 20px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+}
+.part-2{
+  display: block;
+  width: 100%;
+  height: 550px;
+  min-width: 960px;
+}
+.part-2 .block-2 {
+  display: block;
+  width: 960px;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  padding-top: 60px;
+  h1{
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+  }
+}
+.part-2 .block-2 .block-p{
+  display: block;
+  width: 650px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  p{
+    margin: 0 0 10px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 15px;
+  }
+}
+.block-2-1{
+  display: block;
+  border-style: none;
+  border-radius: 0;
+  z-index: 38;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+  float: left;
+}
+.block-2-1 h3{
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #008fff;
+}
+.block-2-1 p{
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  width: 260px;
+  margin-left: 20px;
+}
+.picture{
+   img{
+     width: 100px;
+     height: auto;
+     vertical-align: middle;
+   }
+}
+.part-3{
+  display: block;
+  width: 100%;
+  height: 550px;
+  min-width: 960px;
+  background: #ececec;
+}
+.part-3 .block-3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  height: 550px;
+  position: relative;
+  padding-top: 100px;
+}
+.part-3 .block-3 .books{
+  width: 960px;
+  height: 261.8px;
+  padding: 0 47.5px;
+}
+.part-3 .block-3 .books-1{
+  margin-left: 10px;
+  height: 230px;
+  float: left;
+  padding: 0 10px 0 10px;
+}
+.books-1{
+  width: 154px;
+}
+.part-3 .block-3 h3{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px 0 20px 0;
+}
+.thumb{
+  img{
+    width: 153px;
+    height: 230px;
+  }
+}
+.part-4{
+  display: block;
+  min-width: 960px;
+  height: 200px;
+  background: #c5b2b2;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.part-4 .block-4{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+}
+.part-4 .block-4 h3{
+  font-size: 24px;
+  line-height: 44px;
+  color: black;
+  font-weight: bold;
+}
+.block-4-button{
+  border-radius: 25px;
+  display: inline-block;
+  border: 2px solid #fff;
+  line-height: 1;
+  font-size: 20px;
+  padding: 14px 40px 13px;
+  margin-right: 10px;
+  margin-top: 20px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+.site-footer{
+  background: #323232;
+  color: #ffffff;
+  height:70px;
+  padding-top: 20px;
+}
+.def-footer .list-inline li {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  a{
+    color: white;
+  }
+}
+.def-footer .help-link {
+    float: left;
+    margin: 0 40px;
+}
+.def-footer .copyright-info {
+    float: left;
+    margin: 0 40px;
+}

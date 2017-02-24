@@ -1,11 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "pages";
 
-#map {
+#map_index {
   width: 600px;
   height: 400px;
 }
-body { padding-top: 70px; }
+#map_new {
+  width: 600px;
+  height: 400px;
+}
+#map_edit {
+  width: 600px;
+  height: 400px;
+}
+
+
+body { padding-top: 51px; }
 ul {
   margin: 0;
   padding: 0;

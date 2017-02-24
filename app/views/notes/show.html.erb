@@ -1,2 +1,11 @@
-<h1>Notes#show</h1>
-<p>Find me in app/views/notes/show.html.erb</p>
+<% provide(:title, "#{@note.title}") %>
+
+<div class="container">
+  <div class="col-lg-6 col-lg-offset-3">
+    <ul>
+      <li><label>主题：</label><%= @note.title %></li>
+      <li><label>标签：</label><%= @note.note_type %></li>
+      <li><label>内容：</label><%= @note.body %></li>
+    </ul>
+  </div>
+</div>

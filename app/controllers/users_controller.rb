@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
+  before_action :require_logged_in, except: [:new]
   before_action :set_user, only: [:edit, :show, :update, :destroy]
+
+  def index
+    @users = User.all
+  end
 
   def new
     @user = User.new
@@ -22,7 +27,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-
+    if current_user.id == @user.id
+      render :edit
+    else
+      redirect_to root_url
+    end
   end
 
   def update
@@ -48,4 +57,6 @@ class UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
+
+
 end
