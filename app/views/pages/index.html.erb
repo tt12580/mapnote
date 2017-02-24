@@ -1,0 +1,100 @@
+<% provide(:title, "MapNote") %>
+
+<div class="part-1">
+  <div class="block-1">
+    <h1>享受大脑升级的快感</h1>
+    <h2>10分钟读完一本好书，获取最精华的内容，让你快速涉猎最多的知识领域</h2>
+    <div class="block-1-button">
+      <%= link_to '立即体验', notes_path %>
+    </div>
+  </div>
+</div>
+<div class="part-2">
+  <div class="block-2">
+    <h3>厚重英文书再也不是梦魇</h3>
+    <div class="block-p">
+      <p>
+        浓缩书精选优质英文好书，提炼原书精华。每天10分钟，与世界顶级精英对话，升级你的认知，以全新的思维审视世界。
+      </p>
+    </div>
+    <div class="block-2-1">
+      <div class="picture"><%= image_tag '2.jpg' %></div>
+      <h3>精选英文书籍</h3>
+      <p>
+        我们精选英文世界最优质书籍，由专业团队对内容进行浓缩、翻译。无需掌握英文，也可阅读最前沿的知识。
+      </p>
+    </div>
+    <div class="block-2-1">
+      <div class="picture"><%= image_tag '3.jpg' %></div>
+      <h3>突出重点，聚焦精华</h3>
+      <p>
+        清晰的逻辑是浓缩书的标配。每本浓缩书都会有理有据有条理地为您呈现全书的精华观点。
+      </p>
+    </div>
+    <div class="block-2-1">
+      <div class="picture"><%= image_tag '4.jpg' %></div>
+      <h3>享受流畅阅读的快感</h3>
+      <p>
+        浓缩书会突出全书最精华的内容，同时用最接地气的表达保证您的流畅阅读体验。
+      </p>
+    </div>
+  </div>
+</div>
+<div class="part-3">
+  <div class="block-3">
+    <h3>我们的优质书籍有</h3>
+    <div class="books">
+      <div class="books-1">
+        <div class="thumb">
+          <%= image_tag 'book1.jpg' %>
+        </div>
+      </div>
+      <div class="books-1">
+        <div class="thumb">
+          <%= image_tag 'book2.jpg' %>
+        </div>
+      </div>
+      <div class="books-1">
+        <div class="thumb">
+          <%= image_tag 'book3.jpg' %>
+        </div>
+      </div>
+      <div class="books-1">
+        <div class="thumb">
+          <%= image_tag 'book4.jpg' %>
+        </div>
+      </div>
+      <div class="books-1">
+        <div class="thumb">
+          <%= image_tag 'book5.jpg' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="part-4">
+  <div class="block-4">
+    <h3>还等什么赶紧注册!</h3>
+    <div class="block-4-button">
+      <%= link_to '立即注册', signup_path %>
+    </div>
+  </div>
+  <div class="site-footer">
+    <footer id="footer" class="site-footer col-md-12 col-md-offset-0">
+      <div class="def-footer">
+        <div class="help-link">
+          <ul class="list-inline">
+            <li><%= link_to '关于我们', '#' %></li>
+            <li><%= link_to '联系我们', '#' %></li>
+            <li><%= link_to '情非得已', '#' %></li>
+            <li><%= link_to '新生大学', '#' %></li>
+            <li><%= link_to '风利', '#' %></li>
+          </ul>
+        </div>
+        <div class="copyright-info">
+          <span>©2016 浓缩书, Inc. All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
